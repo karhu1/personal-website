@@ -1,0 +1,37 @@
+body {
+  margin: 0;
+  background-color: #222222;
+}
+
+.info {
+  height: 100vh;
+  /* background-image: url('/public/test1.jpg'); */
+}
+
+html::-webkit-scrollbar {
+  width: 0.75vw;
+}
+
+html::-webkit-scrollbar-thumb {
+  background-color: rgb(34, 34, 34);
+  border-radius: 10rem;
+}
+
+html::-webkit-scrollbar-track {
+  background-color: rgb(73, 73, 73);
+  opacity: 20%;
+}
+
+p {
+  font-family: "Lucida Sans Typewriter","Lucida Console", Monaco,"Bitstream Vera Sans Mono",monospace;
+  color: white;
+  font-size: 24pt;
+}
+
+h1 {
+  font-family: "Lucida Sans Typewriter","Lucida Console",Monaco,"Bitstream Vera Sans Mono",monospace;
+  color: white;
+  font-size: 110pt;
+  margin-top: 35vh;
+  margin-left: 5vw;
+}
