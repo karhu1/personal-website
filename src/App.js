@@ -6,7 +6,7 @@ function App() {
     <>
       <Header />
       <div className="info">
-        <h1>RASMUS<br/>MAKINIEMI</h1>
+        <h1><span id="first">RASMUS</span><br/>MAKINIEMI</h1>
         <p>Testing</p>
       </div>
       <div className="info"></div>
