@@ -31,7 +31,7 @@
   margin-left: 1vw;
 }
 
-@media (min-width: 769px) {
+@media (min-width: 830px) {
   #header, #header:hover {
     display: block;
   }
