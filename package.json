@@ -1,6 +1,7 @@
 {
   "name": "personal-website",
   "version": "0.1.0",
+  "homepage": "https://students.washington.edu/rasmus1/",
   "private": true,
   "dependencies": {
     "react": "^18.2.0",
