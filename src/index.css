@@ -32,7 +32,7 @@ p {
   font-weight: 300;
   font-size: 10pt;
   text-align: center;
-  margin: 10px;
+  margin: 20px;
   line-height: 30px;
 }
 
@@ -53,12 +53,31 @@ h1 {
   font-family: "Lucida Sans Typewriter","Lucida Console",Monaco,"Bitstream Vera Sans Mono",monospace;
   color: white;
   font-size: 40pt;
-  margin-top: 20vh;
+  padding-top: 40vh;
+  margin: 0;
   text-align: center;
 }
 
 #first {
   font-size: 60pt;
+}
+
+.hidden {
+  opacity: 0;
+  transition: all 0.2s;
+}
+
+.show {
+  opacity: 1;
+  transform: translateY(-20px);
+}
+
+#test {
+  /* transform: rotate(10deg); */
+  width: 2000px;
+  height: 100vh;
+  background-color: white;
+  position: relative;
 }
 
 /* Going to laptop */
