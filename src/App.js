@@ -9,12 +9,6 @@ function App() {
     threshold: 0.4,
   };
 
-  let options2 = {
-    // root: document.querySelector("#scrollArea"),
-    rootMargin: "2000px 0px 400px 0px",
-    threshold: 0.5,
-  };
-
   useEffect(() => {
     let observer = new IntersectionObserver((entries) => {
       entries.forEach((entry) => {
@@ -22,17 +16,8 @@ function App() {
       })
     }, options);
 
-    let observer2 = new IntersectionObserver((entries) => {
-      entries.forEach((entry) => {
-        entry.target.classList.toggle('move-up', entry.isIntersecting)
-        if (entry.isIntersecting) console.log('meow')
-      })
-    }, options2);
-
     let elements = document.querySelectorAll(".hidden");
-    let elements2 = document.querySelectorAll(".project-container");
     elements.forEach((el) => observer.observe(el))
-    elements2.forEach((el) => observer2.observe(el))
   }, [])
 
   return (
