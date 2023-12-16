@@ -85,28 +85,22 @@ h1 {
 
 h2 {
   color: rgb(20, 20, 20);
-  z-index: 2;
-  position: relative;
-  transform: rotate(-5deg);
   font-size: 30pt;
-  top: 5vh;
   margin: 0;
-  padding-left: 30vw;
 }
 
 .project-container {
   height: 100vh;
   position: relative;
-  z-index: 1;
   background-color: rgb(238, 238, 238);
   transition: all 1s, width 0s;
 }
 
-.move-up {
+/* .move-up {
   transform: translateY(-150px) rotate(5deg) translateX(-100px);
   width: 150vw;
   box-shadow: 0px 0px 20px 5px rgb(0, 0, 0, 0.4);
-}
+} */
 
 /* Going to laptop */
 @media (min-width: 840px) {

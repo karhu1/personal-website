@@ -1,6 +1,4 @@
 import Header from "./components/Header";
-import AOS from 'aos';
-import 'aos/dist/aos.css';
 import { useEffect } from "react";
 
 
@@ -36,8 +34,6 @@ function App() {
     elements.forEach((el) => observer.observe(el))
     elements2.forEach((el) => observer2.observe(el))
   }, [])
-
-  AOS.init();
 
   return (
     <>
