@@ -103,7 +103,7 @@ h2 {
 } */
 
 /* Going to laptop */
-@media (min-width: 840px) {
+@media (min-width: 768px) {
   h1, #first {
     width: 0;
     margin-top: 35vh;
@@ -116,7 +116,7 @@ h2 {
 }
 
 /* Going from phone to tablet */
-@media (min-width: 840px) {
+@media (min-width: 1200px) {
   h1, #first {
     width: 0;
     margin-top: 35vh;
@@ -124,6 +124,18 @@ h2 {
   }
 
   .info {
+    margin-left: 2rem;
+  }
+}
+
+@media (min-width: 1920px) {
+  h1, #first {
+    width: 0;
+    margin-top: 35vh;
+    font-size: 110pt;
+  }
+
+  .info-container {
     margin-left: 2rem;
   }
 }
