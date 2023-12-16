@@ -36,7 +36,7 @@ a:visited {
 }
 
 h1, #first {
-  transition: ease all .4s .2s;
+  /* transition: ease all .4s .2s; */
   width: 100%;
 }
 
@@ -88,7 +88,7 @@ h2 {
   height: 100vh;
   position: relative;
   background-color: rgb(238, 238, 238);
-  transition: all 1s, width 0s;
+  /* transition: all 1s, width 0s; */
 }
 
 /* .move-up {
