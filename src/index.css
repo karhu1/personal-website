@@ -114,7 +114,7 @@ h2 {
 @media (min-width: 1200px) {
   h1, #first {
     width: 0;
-    margin-top: 35vh;
+    margin-top: 0vh;
     font-size: 110pt;
   }
 
