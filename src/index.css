@@ -84,13 +84,6 @@ h2 {
   margin: 0;
 }
 
-.project-container {
-  height: 100vh;
-  position: relative;
-  background-color: rgb(238, 238, 238);
-  /* transition: all 1s, width 0s; */
-}
-
 /* .move-up {
   transform: translateY(-150px) rotate(5deg) translateX(-100px);
   width: 150vw;
@@ -112,10 +105,91 @@ h2 {
 
 /* Going to laptop */
 @media (min-width: 1200px) {
-  h1, #first {
+  h1 {
     width: 0;
     margin-top: 0vh;
+    margin-left: 1rem;
     font-size: 110pt;
+    height: 80vh;
+  }
+
+  .bio {
+    width: 40rem;
+    margin: auto;
+    font-size: 12pt
+  }
+
+  .project-container section {
+    display: flex;
+    justify-content: space-between;
+    height: 100vh;
+    background-color: rgb(250, 250, 250);
+  }
+
+  .project-container nav > img {
+    height: 50px;
+  }
+
+  .project-container nav {
+    height: 50px;
+    display: flex;
+    justify-content: space-evenly;
+  }
+
+  .project-container section > article {
+    height: 100%;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
+
+  /* .project-container {
+    height: 200vh;
+    background-color: red;
+  } */
+
+  .project-container article > article {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+    width: 80%;
+    margin: 0 auto 0 auto;
+  }
+
+  .project-container p {
+    color: black;
+  }
+
+  .project-container h2 {
+    font-size: 40pt;
+    margin: 0 30px 0 30px;
+  }
+
+  .project-container article p {
+    font-size: 14pt;
+    margin: 0 30px 0 30px;
+  }
+
+  .project-container article article p {
+    color: black;
+    font-size: 12pt;
+  }
+
+  .project-container div {
+    height: 100vh;
+    width: 50%;
+    background-position: center;
+    background-size: cover;
+  }
+
+  #syntext-logo {
+    background-image: url("../public/syntext.png");
+  }
+
+  #m2-logo {
+    background-image: url("../public/meet-together.png");
   }
 
   .info {
