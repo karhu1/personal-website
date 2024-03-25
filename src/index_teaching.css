@@ -113,6 +113,10 @@ h2 {
   height: 30px;
 }
 
+.project-container li {
+  margin-bottom: 15px;
+}
+
 .project-container nav {
   height: 50px;
   display: flex;
@@ -145,9 +149,13 @@ h2 {
 }
 
 .project-container article>p {
-  font-size: 14pt;
+  font-size: 10pt;
   margin: 0 30px 0 30px;
   color: black;
+}
+
+.project-container ul {
+  padding: 20px;
 }
 
 .project-container article article p {
@@ -164,30 +172,19 @@ h2 {
 }
 
 #syntext-logo {
-  background-image: url("../public/syntext.png");
+  background-image: url("../public/mountain.jpg");
 }
 
 #m2-logo {
-  background-image: url("../public/meet-together.png");
+  background-image: url("../public/lake.jpg");
 }
 
 /* Going to tablet */
 @media (min-width: 768px) {
-  h1 {
-    /* width: 0; */
-    margin-top: -5vh;
-    font-size: 50pt;
-  }
-
-  #first {
-    font-size: 75pt;
-  }
-
-  .bio {
-    font-size: 12pt;
-    margin-left: 10vw;
-    margin-top: 40vh;
-    margin-right: 10vw;
+  h1, #first {
+    width: 0;
+    margin-top: 35vh;
+    font-size: 110pt;
   }
 
   .info {
@@ -196,7 +193,7 @@ h2 {
 }
 
 /* Going to laptop */
-@media (min-width: 1024px) {
+@media (min-width: 1200px) {
   #m2-border {
     border-style: none;
   }
@@ -205,14 +202,9 @@ h2 {
     border-style: none;
   }
 
-  #first {
-    margin-top: 10px;
-    font-size: 85pt;
-  }
-
   h1 {
     width: 0;
-    margin-top: -3vh;
+    margin-top: 0vh;
     margin-left: 1rem;
     font-size: 110pt;
     height: 80vh;
@@ -220,7 +212,7 @@ h2 {
 
   .bio {
     width: 40rem;
-    margin: 5vh auto auto auto;
+    margin: auto;
     font-size: 12pt
   }
 
@@ -289,14 +281,6 @@ h2 {
     display: inherit;
     background-position: center;
     background-size: cover;
-  }
-
-  #syntext-logo {
-    background-image: url("../public/syntext.png");
-  }
-
-  #m2-logo {
-    background-image: url("../public/meet-together.png");
   }
 
   .info {
