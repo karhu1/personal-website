@@ -42,31 +42,27 @@ h1, #first {
 
 h1 {
   color: white;
-  font-size: 40pt;
+  font-size: 45pt;
   padding-top: 40vh;
   margin: 0;
   text-align: center;
 }
 
 #first {
-  font-size: 60pt;
+  font-size: 69pt;
 }
 
 .bio {
   font-weight: 300;
-  font-size: 10pt;
+  font-size: 12pt;
   text-align: center;
-  margin: 20px;
+  margin: 0 50px;
   line-height: 30px;
   margin-top: 40vh;
 }
 
-.bio-container {
-  height: 70vh;
-}
-
 .info-container {
-  height: 100vh;
+  height: 0vh;
 }
 
 .hidden {
@@ -95,7 +91,7 @@ h2 {
   display: flex;
   justify-content: space-between;
   flex-direction: column;
-  height: 100vh;
+  height: 80vh;
   background-color: rgb(250, 250, 250);
 }
 
@@ -109,8 +105,25 @@ h2 {
   border-style: solid none none none;
 }
 
+#botkram-border {
+  border: rgb(213, 14, 248) 20px;
+  border-style: solid none none none;
+}
+
+#syntext-logo {
+  background-image: url("../public/syntext.png");
+}
+
+#m2-logo {
+  background-image: url("../public/meet-together.png");
+}
+
+#botkram-logo {
+  background-image: url("../public/botkram.png");
+}
+
 .project-container nav img {
-  height: 30px;
+  height: 100%;
 }
 
 .project-container nav {
@@ -141,12 +154,12 @@ h2 {
 
 .project-container h2 {
   font-size: 40pt;
-  margin: 0 30px 0 30px;
+  margin: 0 45px 0 45px;
 }
 
 .project-container article>p {
   font-size: 14pt;
-  margin: 0 30px 0 30px;
+  margin: 0 45px 0 45px;
   color: black;
 }
 
@@ -163,28 +176,20 @@ h2 {
   background-size: cover;
 }
 
-#syntext-logo {
-  background-image: url("../public/syntext.png");
-}
-
-#m2-logo {
-  background-image: url("../public/meet-together.png");
-}
-
 /* Going to tablet */
 @media (min-width: 768px) {
   h1 {
     /* width: 0; */
     margin-top: -5vh;
-    font-size: 50pt;
+    font-size: 65pt;
   }
 
   #first {
-    font-size: 75pt;
+    font-size: 100pt;
   }
 
   .bio {
-    font-size: 12pt;
+    font-size: 14pt;
     margin-left: 10vw;
     margin-top: 40vh;
     margin-right: 10vw;
@@ -192,6 +197,24 @@ h2 {
 
   .info {
     margin-left: 2rem;
+  }
+
+  .project-container nav {
+    height: 60px;
+  }
+
+  .project-container article>article>p {
+    font-size: 16pt;
+  }
+
+  .project-container h2 {
+    margin: 0 100px;
+    font-size: 50pt;
+  }
+
+  .project-container article>p {
+    margin: 0 100px;
+    font-size: 16pt;
   }
 }
 
@@ -205,23 +228,30 @@ h2 {
     border-style: none;
   }
 
+  #botkram-border {
+    border-style: none;
+  }
+
   #first {
-    margin-top: 10px;
-    font-size: 85pt;
+    margin-top: 20px;
+    font-size: 100pt;
+  }
+
+  .info-container {
+    margin-left: 3rem;
   }
 
   h1 {
     width: 0;
     margin-top: -3vh;
     margin-left: 1rem;
-    font-size: 110pt;
+    font-size: 120pt;
     height: 80vh;
   }
 
   .bio {
     width: 40rem;
     margin: 5vh auto auto auto;
-    font-size: 12pt
   }
 
   .project-container section {
@@ -232,54 +262,21 @@ h2 {
     background-color: rgb(250, 250, 250);
   }
 
-  .project-container nav>img {
-    height: 50px;
-  }
-
-  .project-container nav {
-    height: 50px;
-    display: flex;
-    justify-content: space-evenly;
-  }
-
   .project-container section>article {
-    height: 100%;
     width: 50%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-  }
-
-  /* .project-container {
-    height: 200vh;
-    background-color: red;
-  } */
-
-  .project-container article>article {
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    text-align: center;
-    width: 80%;
-    margin: 0 auto 0 auto;
-  }
-
-  .project-container p {
-    color: black;
   }
 
   .project-container h2 {
-    font-size: 40pt;
-    margin: 0 30px 0 30px;
+    font-size: 50pt;
+    margin: 0 70px;
   }
 
   .project-container article p {
     font-size: 14pt;
-    margin: 0 30px 0 30px;
+    margin: 0 70px;
   }
 
   .project-container article article p {
-    color: black;
     font-size: 12pt;
   }
 
@@ -290,18 +287,6 @@ h2 {
     background-position: center;
     background-size: cover;
   }
-
-  #syntext-logo {
-    background-image: url("../public/syntext.png");
-  }
-
-  #m2-logo {
-    background-image: url("../public/meet-together.png");
-  }
-
-  .info {
-    margin-left: 2rem;
-  }
 }
 
 /* Going to big desktop */
@@ -309,16 +294,35 @@ h2 {
   h1, #first {
     width: 0;
     margin-top: 0vh;
-    font-size: 110pt;
+    font-size: 150pt;
   }
 
   .bio {
-    font-size: 12pt;
+    font-size: 14pt;
     width: 70rem;
     margin: auto;
   }
 
   .info-container {
     margin-left: 5rem;
+  }
+
+  .project-container h2 {
+    margin: 0 135px;
+    font-size: 55pt;
+  }
+
+  .project-container article>p {
+    margin: 0 135px;
+    font-size: 16pt;
+  }
+
+  .project-container article>article>p {
+    margin: auto;
+    font-size: 16pt;
+  }
+
+  .project-container nav {
+    height: 50px;
   }
 }
