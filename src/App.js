@@ -130,7 +130,7 @@ const App = () => {
           </section>
         </ParallaxLayer>
         <ParallaxLayer offset={3} speed={0.8} className="">
-          <img alt="image of rasmus" src={process.env.PUBLIC_URL + "/rasmus.jpg"} />
+          <img alt="rasmus playing the trumpet" src={process.env.PUBLIC_URL + "/rasmus.jpg"} />
         </ParallaxLayer>
       </Parallax>
     </div>
