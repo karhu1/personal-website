@@ -30,7 +30,7 @@ const App = () => {
           </h1>
           <p className="bio">
             I am a Computer Science teaching assistant and student at the{" "}
-            <a target="_blank" href="https://www.cs.washington.edu/">
+            <a target="_blank" rel="noreferrer" href="https://www.cs.washington.edu/">
               University of Washington's Paul G. Allen School
             </a>
             . Currently pursuing my passion for web development, teaching, and
@@ -130,7 +130,7 @@ const App = () => {
           </section>
         </ParallaxLayer>
         <ParallaxLayer offset={3} speed={0.8} className="">
-          <img src={process.env.PUBLIC_URL + "/rasmus.jpg"} />
+          <img alt="image of rasmus" src={process.env.PUBLIC_URL + "/rasmus.jpg"} />
         </ParallaxLayer>
       </Parallax>
     </div>
